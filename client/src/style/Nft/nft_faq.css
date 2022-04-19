@@ -1,0 +1,88 @@
+.nft_faq {
+	width: 100%;
+	height: 100vh;
+	min-height: 927px;
+	background-image: url('../../img/Nft/cave_background.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-inline: 120px;
+}
+.nft_faq_content {
+	display: flex;
+	padding-top: 150px;
+	padding-bottom: 80px;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	z-index: 1;
+}
+.nft_faq_title {
+	margin-top: 100px;
+	margin-bottom: 25px;
+}
+
+.nft_faq_interactive {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 20px;
+}
+.nft_faq_interactive_block {
+	width: 100%;
+	height: 78px;
+	padding: 20px 25px;
+	background: linear-gradient(180deg, #331e19 0%, #171110 100%);
+	border: 4px solid #523836;
+	box-shadow: 0px 17px 32px rgba(20, 16, 15, 0.75);
+	border-radius: 48px;
+	transition: all 300ms ease;
+	overflow: hidden;
+	z-index: 2;
+}
+.nft_faq_interactive_block_open {
+	transition: all 300ms ease;
+	height: 250px;
+}
+.nft_faq_interactive_block_open:nth-child(1) {
+	transition: all 300ms ease;
+	height: 220px;
+}
+.nft_faq_interactive_block_open:nth-child(2) {
+	transition: all 300ms ease;
+	height: 220px;
+}
+.nft_faq_interactive_block_open:nth-child(3) {
+	transition: all 300ms ease;
+	height: 150px;
+}
+.nft_faq_interactive_block_title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.nft_faq_interactive_block_title svg {
+	transform: rotateZ(0deg);
+	transition: all 250ms ease;
+}
+.nft_faq_interactive_content {
+	margin-top: 20px;
+	font-size: 18px;
+	color: #af9f94;
+	transition: all 250ms ease;
+}
+
+@media screen and (max-width: 768px) {
+	.nft_faq {
+		padding-inline: 50px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.nft_faq {
+		padding-inline: 20px;
+	}
+}

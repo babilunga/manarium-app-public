@@ -1,0 +1,70 @@
+.games_image {
+  height: 268px;
+  position: relative;
+
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+
+  --trans-dur-hover: 200ms;
+  --trans-dur-leave: 500ms;
+  z-index: 1;
+}
+
+/* .games_image::before {
+  content: '';
+  display: block;
+
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(0, 0, 0);
+  opacity: 0.2;
+  transition: opacity ease-in-out var(--trans-dur-leave);
+
+  z-index: 999;
+}
+.games_image:hover::before {
+  opacity: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: opacity ease-in-out var(--trans-dur-hover);
+} */
+
+.games_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all ease-in-out var(--trans-dur-hover);
+
+  opacity: 1;
+  z-index: 998;
+}
+
+.games_image:hover img {
+  transform: scale(1.05);
+}
+.games_image:hover .games_video {
+  transition: opacity ease-in-out var(--trans-dur-hover);
+  opacity: 1;
+}
+
+.games_video {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  background-color: rgb(71, 77, 87);
+
+  position: absolute;
+  inset: 0;
+
+  transition: opacity ease-in-out var(--trans-dur-leave);
+  opacity: 0;
+  z-index: 997;
+}

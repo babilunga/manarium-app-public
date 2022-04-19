@@ -1,0 +1,226 @@
+.wallet_button {
+	position: relative;
+	display: flex;
+	height: 32px;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 5px 15px;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 163, 255, 0) 0%,
+		rgba(0, 163, 255, 0.05) 63.54%,
+		rgba(0, 163, 255, 0.05) 100%
+	);
+	filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.08));
+	backdrop-filter: blur(13px);
+	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	animation-iteration-count: 1;
+	cursor: pointer;
+	z-index: 3;
+}
+.wallet_button:hover {
+	background: linear-gradient(
+		180deg,
+		rgba(0, 163, 255, 0) 0%,
+		rgba(0, 163, 255, 0.08) 63.54%,
+		rgba(0, 163, 255, 0.08) 100%
+	);
+}
+#wallet_button_close {
+	animation: 0.15s linear disapperance;
+	animation-fill-mode: forwards;
+}
+#wallet_button_open {
+	animation: 0.15s linear apperance;
+	animation-fill-mode: forwards;
+}
+#wallet_button_avatar {
+	width: 24px;
+	height: 24px;
+	border: 1px solid rgba(94, 119, 155, 0.15);
+	border-radius: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#wallet_button_avatar_minified {
+	width: 24px;
+	height: 24px;
+	/* border: 1px solid rgba(94, 119, 155, 0.15); */
+	/* border-radius: 200px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#wallet_button_avatar img,
+#wallet_button_avatar_minified img {
+	width: 18px;
+	height: 18px;
+}
+.wallet_button_dropdown {
+	position: absolute;
+	top: 32px;
+	right: 0;
+	width: 180px;
+	padding: 12px;
+	padding-top: 10px;
+	backdrop-filter: blur(13px);
+	filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 1));
+	background: linear-gradient(
+		180deg,
+		rgba(0, 163, 255, 0) 0%,
+		rgba(0, 163, 255, 0.05) 63.54%,
+		rgba(0, 163, 255, 0.05) 100%
+	);
+	border-bottom-left-radius: 32px;
+	border-bottom-right-radius: 32px;
+	animation: 0.25s linear dropdown;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	cursor: default;
+}
+@supports not (backdrop-filter: blur(13px)) {
+	.wallet_button_dropdown {
+		background-color: rgba(74, 74, 74, 0.3);
+	}
+}
+@supports not (filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 1))) {
+	.wallet_button_dropdown {
+		background-color: rgba(74, 74, 74, 0.3);
+	}
+}
+.wallet_button_dropdown::before {
+	content: '';
+	position: absolute;
+	height: 50px;
+	left: 0;
+	bottom: 0;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-top: none;
+	border-radius: 0 0 32px 32px;
+	width: 100%;
+}
+.wallet_button_dropdown::after {
+	content: '';
+	position: absolute;
+	height: calc(100% - 50px);
+	top: 0;
+	left: 0;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-image: linear-gradient(
+			to top,
+			rgba(255, 255, 255, 0.15),
+			rgba(0, 0, 0, 0)
+		)
+		1 100%;
+	width: 100%;
+}
+.wallet_button_dropdown_item {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 50px;
+}
+.wallet_button_dropdown_item:last-child {
+	height: 42px;
+}
+#wallet_button_dropdown_item_underline {
+	border-bottom: 1px solid rgba(94, 119, 155, 0.25);
+}
+#wallet_button_dropdown_icon {
+	margin-right: 24px;
+}
+.wallet_button_logout {
+	border: 2px solid #00a3ff;
+	background-color: transparent;
+	width: 100%;
+	height: 32px;
+	cursor: pointer;
+	box-sizing: border-box;
+	border-radius: 20px;
+	flex: none;
+	order: 5px;
+	align-self: stretch;
+	flex-grow: 0px;
+	margin: 10px 0px;
+	z-index: 3;
+	transition: filter 100ms ease-in-out;
+}
+.wallet_button_logout:hover {
+	border: 2px solid #41b9ff;
+}
+#wallet_button_arrow {
+	margin-right: 0;
+	margin-left: 20px;
+	transition: transform 150ms ease-in-out;
+}
+.wallet_button_arrow_open {
+	transform: rotateZ(180deg);
+}
+.wallet_button_arrow_close {
+	transform: rotateZ(0deg);
+}
+
+@keyframes apperance {
+	0% {
+		background: linear-gradient(
+			180deg,
+			rgba(0, 163, 255, 0) 0%,
+			rgba(0, 163, 255, 0.05) 63.54%,
+			rgba(0, 163, 255, 0.05) 100%
+		);
+		filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.08));
+		backdrop-filter: blur(13px);
+		border-radius: 16px;
+		border: 1px solid rgba(255, 255, 255, 0.15);
+	}
+	100% {
+		background: linear-gradient(
+			180deg,
+			rgba(0, 163, 255, 0) 0%,
+			rgba(0, 163, 255, 0) 63.54%,
+			rgba(0, 163, 255, 0) 100%
+		);
+		filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.08));
+		backdrop-filter: blur(13px);
+		border-radius: 16px;
+		border: 1px solid rgba(0, 0, 0, 0);
+	}
+}
+@keyframes disapperance {
+	0% {
+		background: linear-gradient(
+			180deg,
+			rgba(0, 163, 255, 0) 0%,
+			rgba(0, 163, 255, 0) 63.54%,
+			rgba(0, 163, 255, 0) 100%
+		);
+		filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.08));
+		backdrop-filter: blur(13px);
+		border-radius: 16px;
+		border: 1px solid rgba(0, 0, 0, 0);
+	}
+	100% {
+		/* background: linear-gradient(
+			0deg,
+			rgba(0, 163, 255, 0) 0%,
+			rgba(0, 163, 255, 0.05) 63.54%,
+			rgba(0, 163, 255, 0.05) 100%
+		); */
+		filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.08));
+		backdrop-filter: blur(13px);
+		border-radius: 16px;
+		border: 1px solid rgba(255, 255, 255, 0.15);
+	}
+}
+@keyframes dropdown {
+	0% {
+		transform: translateY(-3%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}

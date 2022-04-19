@@ -1,0 +1,15 @@
+.advantages {
+  padding-top: var(--section-p-top);
+}
+.advantages_content h2 {
+  text-align: center;
+}
+.advantages_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 50px 20px;
+
+  margin-top: 50px;
+}

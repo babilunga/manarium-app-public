@@ -1,0 +1,22 @@
+.games__table {
+	margin-top: 30px;
+	width: 100%;
+}
+.games__table__content {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+	grid-template-rows: auto;
+
+	column-gap: 25px;
+	row-gap: 50px;
+}
+@media screen and (max-width: 600px) {
+	.games__table__content {
+		padding-inline: 20px;
+	}
+}
+@media screen and (max-width: 420px) {
+	.games__table__content {
+		padding-inline: 0px;
+	}
+}

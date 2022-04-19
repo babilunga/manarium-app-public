@@ -1,0 +1,43 @@
+.nft_hero_parralax {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	/* overflow: hidden; */
+	z-index: 0;
+}
+.nft_hero_parallax_layer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.nft_hero_parallax_layer img {
+	position: absolute;
+	top: 0;
+	object-fit: cover;
+	height: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#nft_hero_parallax_left_tree img {
+	left: -5%;
+	transform: scale(1.05);
+}
+#nft_hero_parallax_right_tree img {
+	right: -2.5%;
+	left: auto;
+	transform: scale(1.05);
+}
+#nft_hero_parallax_light_id img {
+	top: -295px;
+}
+#nft_hero_parallax_mid img {
+	bottom: -9%;
+	top: auto;
+}
+#nft_hero_parallax_back img {
+	bottom: -9%;
+	top: auto;
+}

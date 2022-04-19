@@ -1,0 +1,20 @@
+.coin_price {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: max-content;
+	height: 32px;
+
+	padding-inline: 15px;
+	background: rgba(22, 22, 35, 0.45);
+	border-radius: 16px;
+}
+.coin_price_content {
+	position: relative;
+	width: 100%;
+	height: 32px;
+	display: flex;
+	gap: 7px;
+	justify-content: space-between;
+	align-items: center;
+}

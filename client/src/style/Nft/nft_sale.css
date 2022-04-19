@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'Conv_Baloo-Regular';
+	src: url('../../fonts/Baloo-Regular.eot');
+	src: local('☺'), url('../../fonts/Baloo-Regular.woff') format('woff'),
+		url('../../fonts/Baloo-Regular.ttf') format('truetype'),
+		url('../../fonts/Baloo-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.baloo_font {
+	font-family: 'Conv_Baloo-Regular';
+	font-weight: 400;
+}
+
+.nft_sale {
+	font-family: 'Conv_Baloo-Regular';
+	font-weight: 400;
+	width: 100%;
+	overflow: hidden;
+}
+.nft_header {
+	padding-inline: 120px;
+	z-index: 3;
+}
+.nft_header_button,
+.nft_header_button_wallet {
+	margin-left: auto;
+}
+.nft_header_button {
+	background-color: #fff !important;
+	color: var(--accent-color) !important;
+}
+@media screen and (max-width: 768px) {
+	.nft_header {
+		padding-inline: 50px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.nft_header {
+		padding-inline: 20px;
+	}
+}

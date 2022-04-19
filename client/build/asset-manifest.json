@@ -1,0 +1,40 @@
+{
+  "files": {
+    "static/js/0.45c7eba1.chunk.js": "/static/js/0.45c7eba1.chunk.js",
+    "static/js/0.45c7eba1.chunk.js.map": "/static/js/0.45c7eba1.chunk.js.map",
+    "static/js/1.9bd020da.chunk.js": "/static/js/1.9bd020da.chunk.js",
+    "static/js/1.9bd020da.chunk.js.map": "/static/js/1.9bd020da.chunk.js.map",
+    "main.css": "/static/css/main.bb6b59f9.chunk.css",
+    "main.js": "/static/js/main.f003f36f.chunk.js",
+    "main.js.map": "/static/js/main.f003f36f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5cfe61e6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5cfe61e6.js.map",
+    "static/js/4.51c0e465.chunk.js": "/static/js/4.51c0e465.chunk.js",
+    "static/js/4.51c0e465.chunk.js.map": "/static/js/4.51c0e465.chunk.js.map",
+    "static/js/5.e5789228.chunk.js": "/static/js/5.e5789228.chunk.js",
+    "static/js/5.e5789228.chunk.js.map": "/static/js/5.e5789228.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.bb6b59f9.chunk.css.map": "/static/css/main.bb6b59f9.chunk.css.map",
+    "static/js/4.51c0e465.chunk.js.LICENSE.txt": "/static/js/4.51c0e465.chunk.js.LICENSE.txt",
+    "static/media/reset.css": "/static/media/ArtegraSans-SemiBold.944373d5.eot",
+    "static/media/hero.css": "/static/media/big_m.4de3890c.svg",
+    "static/media/game_preview.37afbad1.png": "/static/media/game_preview.37afbad1.png",
+    "static/media/launch.1a2cda11.png": "/static/media/launch.1a2cda11.png",
+    "static/media/logo.f68ccdba.svg": "/static/media/logo.f68ccdba.svg",
+    "static/media/mana.fecd9221.png": "/static/media/mana.fecd9221.png",
+    "static/media/mana_glow.9b191c13.png": "/static/media/mana_glow.9b191c13.png",
+    "static/media/footer.css": "/static/media/particles.ed2c307b.svg",
+    "static/media/playtoearn.e3c12089.png": "/static/media/playtoearn.e3c12089.png",
+    "static/media/reborn.338adc9a.png": "/static/media/reborn.338adc9a.png",
+    "static/media/spikywalls.f1462bb7.png": "/static/media/spikywalls.f1462bb7.png",
+    "static/media/tothemoon.c7e103fb.png": "/static/media/tothemoon.c7e103fb.png",
+    "static/media/tournaments.f48cf396.png": "/static/media/tournaments.f48cf396.png",
+    "static/media/trailer1.1d4b1b88.mp4": "/static/media/trailer1.1d4b1b88.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5cfe61e6.js",
+    "static/js/4.51c0e465.chunk.js",
+    "static/css/main.bb6b59f9.chunk.css",
+    "static/js/main.f003f36f.chunk.js"
+  ]
+}

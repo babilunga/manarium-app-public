@@ -1,0 +1,174 @@
+
+skeleton.png
+size: 1984,520
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Group 92
+  rotate: true
+  xy: 1124, 394
+  size: 124, 688
+  orig: 124, 688
+  offset: 0, 0
+  index: -1
+Group 93
+  rotate: false
+  xy: 1124, 208
+  size: 546, 184
+  orig: 546, 184
+  offset: 0, 0
+  index: -1
+default_skins/Body
+  rotate: false
+  xy: 2, 203
+  size: 437, 315
+  orig: 447, 319
+  offset: 0, 4
+  index: -1
+default_skins/Eye_1
+  rotate: true
+  xy: 1753, 237
+  size: 56, 55
+  orig: 56, 55
+  offset: 0, 0
+  index: -1
+default_skins/Eye_2
+  rotate: false
+  xy: 1898, 36
+  size: 40, 39
+  orig: 40, 39
+  offset: 0, 0
+  index: -1
+default_skins/Head
+  rotate: false
+  xy: 441, 277
+  size: 268, 241
+  orig: 268, 241
+  offset: 0, 0
+  index: -1
+default_skins/L_hand_top
+  rotate: true
+  xy: 2, 2
+  size: 199, 206
+  orig: 245, 223
+  offset: 15, 5
+  index: -1
+default_skins/Nose
+  rotate: true
+  xy: 636, 189
+  size: 86, 73
+  orig: 98, 92
+  offset: 6, 8
+  index: -1
+default_skins/R_hand_top
+  rotate: false
+  xy: 947, 82
+  size: 175, 205
+  orig: 299, 289
+  offset: 56, 45
+  index: -1
+default_skins/gloves/Finger_1
+  rotate: true
+  xy: 1802, 30
+  size: 74, 94
+  orig: 113, 122
+  offset: 25, 14
+  index: -1
+default_skins/gloves/Finger_2
+  rotate: true
+  xy: 1915, 77
+  size: 79, 67
+  orig: 79, 67
+  offset: 0, 0
+  index: -1
+default_skins/gloves/Finger_3
+  rotate: false
+  xy: 1672, 206
+  size: 79, 87
+  orig: 79, 87
+  offset: 0, 0
+  index: -1
+default_skins/gloves/Finger_4
+  rotate: false
+  xy: 636, 120
+  size: 64, 67
+  orig: 64, 67
+  offset: 0, 0
+  index: -1
+default_skins/gloves/L_hand_bot
+  rotate: false
+  xy: 441, 8
+  size: 193, 267
+  orig: 224, 276
+  offset: 31, 0
+  index: -1
+default_skins/gloves/R_hand_bot
+  rotate: true
+  xy: 711, 70
+  size: 217, 234
+  orig: 236, 251
+  offset: 14, 7
+  index: -1
+default_skins/heads/black/beard
+  rotate: false
+  xy: 711, 289
+  size: 411, 229
+  orig: 411, 229
+  offset: 0, 0
+  index: -1
+default_skins/heads/black/brow1
+  rotate: true
+  xy: 1672, 295
+  size: 97, 82
+  orig: 105, 89
+  offset: 4, 3
+  index: -1
+default_skins/heads/black/brow2
+  rotate: true
+  xy: 1756, 298
+  size: 94, 48
+  orig: 103, 58
+  offset: 4, 5
+  index: -1
+default_skins/heads/black/hair
+  rotate: false
+  xy: 1310, 3
+  size: 490, 152
+  orig: 491, 157
+  offset: 1, 5
+  index: -1
+default_skins/pants/L_leg
+  rotate: false
+  xy: 210, 15
+  size: 203, 186
+  orig: 222, 207
+  offset: 7, 9
+  index: -1
+default_skins/pants/Leg
+  rotate: false
+  xy: 1753, 157
+  size: 51, 78
+  orig: 51, 78
+  offset: 0, 0
+  index: -1
+default_skins/pants/R_leg
+  rotate: false
+  xy: 1124, 27
+  size: 184, 179
+  orig: 184, 180
+  offset: 0, 1
+  index: -1
+default_skins/pants/belt_simple
+  rotate: true
+  xy: 1814, 158
+  size: 360, 156
+  orig: 360, 159
+  offset: 0, 3
+  index: -1
+default_skins/pants/shoe
+  rotate: false
+  xy: 1806, 106
+  size: 107, 50
+  orig: 112, 56
+  offset: 5, 2
+  index: -1

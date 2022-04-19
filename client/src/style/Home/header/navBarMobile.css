@@ -1,0 +1,244 @@
+/*
+==================
+Burger Menu Component
+==================
+*/
+.nav__navbar-burger {
+	display: none;
+	position: relative;
+}
+.burger__btn {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border: none;
+
+	margin-left: auto;
+	margin-right: 20px;
+
+	border-radius: 10px;
+
+	cursor: pointer;
+	z-index: 999;
+}
+.burger__btn::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 80%;
+	height: 80%;
+	background-color: var(--accent-color);
+	opacity: 0.7;
+	filter: blur(15px);
+}
+
+@media screen and (max-width: 1250px) {
+	/* ======================= */
+	/*       Burger Menu       */
+	/* ======================= */
+	.nav__navbar-burger {
+		display: block;
+	}
+	.burger__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+
+		width: 40px;
+		height: 40px;
+
+		background-color: transparent;
+
+		cursor: pointer;
+	}
+
+	/* BURGER ICON */
+	.burger__btn > span:first-child,
+	.burger__btn > span:nth-child(2),
+	.burger__btn > span:last-child {
+		transition: ease-in-out 0.2s;
+		display: block;
+		position: absolute;
+		width: 26px;
+		height: 2px;
+		background-color: white;
+		border-radius: 100px;
+		z-index: 999;
+	}
+	.burger__btn > span:first-child {
+		display: block;
+		top: 10px;
+		left: 6.5px;
+	}
+	.burger__btn > span:nth-child(2) {
+		display: block;
+		top: 48%;
+		left: 6.5px;
+	}
+	.burger__btn > span:last-child {
+		display: block;
+		top: 28px;
+		left: 6.5px;
+	}
+
+	/* контейнер меню */
+	.burger__box {
+		transition: ease-in-out 0.3s;
+		visibility: hidden;
+
+		position: fixed;
+		top: 50%;
+		left: -100%;
+		transform: translateY(-50%);
+
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		width: 200px;
+		height: 80vh;
+		min-height: 200px;
+		padding: 40px 15px !important;
+
+		z-index: 0;
+		background: linear-gradient(
+			180deg,
+			rgba(0, 163, 255, 0) 0%,
+			rgba(0, 163, 255, 0.05) 63.54%,
+			rgba(0, 163, 255, 0.05) 100%
+		);
+		filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.08));
+		backdrop-filter: blur(13px);
+		border-top-right-radius: 32px;
+		border-bottom-right-radius: 32px;
+	}
+	.burger__box::before {
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		border-left: none;
+		border-radius: 0 32px 32px 0;
+		z-index: -1;
+	}
+	.burger__box::after {
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: calc(100% - 50px);
+		top: 0;
+		left: 0;
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		border-image: linear-gradient(
+				to left,
+				rgba(255, 255, 255, 0.15),
+				rgba(0, 0, 0, 0)
+			)
+			1 100%;
+		border-right: none;
+		z-index: -1;
+	}
+	.burger__box li {
+		padding: 0;
+		width: 100%;
+	}
+	.burger__box li:last-child {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 25px;
+	}
+	/* элементы меню */
+	.burger__item {
+		color: white;
+		display: block;
+		text-decoration: none;
+		width: 100%;
+		padding: 5px 20px;
+		cursor: pointer;
+		font-size: 14px;
+	}
+	.burger__item:active {
+		text-shadow: 0 0 35px rgba(0, 163, 255, 1);
+	}
+	.exit-btn {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: transparent;
+
+		border: none;
+
+		z-index: -1;
+	}
+}
+/* UTILITY */
+.active {
+	transition: ease-in-out 0.3s;
+	visibility: visible;
+	left: 0;
+}
+.disabled {
+	display: none;
+	visibility: hidden;
+}
+
+/* CLOSE ANIMATION */
+.crossed:first-child {
+	opacity: 0;
+}
+.crossed:nth-child(2) {
+	transform: rotate(-45deg);
+}
+.crossed:last-child {
+	transform: rotate(45deg) translateX(-6px) translateY(-6px);
+}
+
+/* ADDITIONAL MEDIA */
+/* ADDITIONAL MEDIA */
+/* ADDITIONAL MEDIA */
+@media (pointer: fine) {
+	.burger__media:hover {
+		transform: scale(1.05);
+	}
+	.burger__media:active {
+		transform: scale(0.95);
+	}
+}
+@media (pointer: coarse) {
+	.burger__media:hover {
+		transform: scale(1);
+	}
+	.burger__media:active {
+		transform: scale(1.05);
+	}
+}
+.burger__media::after {
+	content: '';
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+
+	width: 30px;
+	height: 30px;
+
+	z-index: -1;
+}
+#telegram-link svg {
+	transform: translateY(10%);
+}
+#twitter-link svg {
+	transform: translateY(10%);
+}

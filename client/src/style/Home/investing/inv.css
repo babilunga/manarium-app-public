@@ -1,0 +1,24 @@
+.inv {
+  padding-top: var(--section-p-top);
+}
+.inv_content {
+}
+.inv_content h2 {
+  text-align: center;
+}
+.inv_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 880px) {
+  .inv_cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+  }
+}

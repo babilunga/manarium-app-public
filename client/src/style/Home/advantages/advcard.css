@@ -1,0 +1,39 @@
+.invcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px min(140px, 5vw);
+  /* width: 100%; */
+}
+.invcard_image {
+  flex: 1 1 50%;
+}
+.invcard_info {
+  flex: 1 1 50%;
+}
+.invcard_info h3 {
+  font-size: 36px;
+}
+.invcard_info_left {
+  order: -1;
+  text-align: right;
+}
+
+@media screen and (max-width: 880px) {
+  .invcard {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .invcard_info {
+    /* width: 100%; */
+    align-items: flex-start;
+    text-align: left;
+  }
+  .invcard_info_left {
+    order: 1;
+    text-align: left;
+  }
+  .invcard_image {
+    width: 100%;
+  }
+}

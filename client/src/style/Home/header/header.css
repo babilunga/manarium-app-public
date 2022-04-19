@@ -1,0 +1,128 @@
+.logo_home_header {
+	margin-left: 24px;
+}
+.header__navbar {
+	position: relative;
+	margin-left: 50px;
+}
+.header__navbar-desktop {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.menu-item {
+	font-size: 14px;
+}
+.menu-item a {
+	font-size: 14px;
+	padding: 25.5px 1vw;
+	transition: color 100ms ease-in-out;
+	cursor: pointer;
+}
+.menu-item:hover a {
+	color: var(--accent-color);
+	text-shadow: 0 0 30px rgba(0, 163, 255, 0.7);
+}
+/*  */
+.item-dropdown {
+	position: relative;
+}
+.item-dropdown::after,
+.item-dropdown::before {
+	content: '';
+	width: 9px;
+	height: 6px;
+	position: absolute;
+	display: block;
+	top: 5.5px;
+	right: 5px;
+	background-position: top 0 right 0;
+	background-repeat: no-repeat;
+	transition: all 100ms ease-in-out;
+}
+.item-dropdown::after {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="9" hight="6"><polygon points="0,0 9,0 4.5,6" style="fill:%23ffffff" /></svg>');
+	opacity: 1;
+}
+.item-dropdown::before {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="9" hight="6"><polygon points="0,0 9,0 4.5,6" style="fill:%2300A3FF" /></svg>');
+	opacity: 0;
+}
+.item-dropdown:hover::before {
+	opacity: 1;
+}
+.item-dropdown:hover::after {
+	opacity: 0;
+}
+.item-dropdown a {
+	padding-right: 1.5em;
+}
+.item-dropdown:hover ~ .dropdown-apearence {
+	top: 41px;
+	left: 0px;
+
+	opacity: 1;
+	z-index: 1;
+}
+.item-new a {
+	animation: 1.5s linear 1s infinite alternate newBlinking;
+}
+@keyframes newBlinking {
+	0% {
+		filter: drop-shadow(0 0 8px rgba(0, 163, 255, 0));
+		text-shadow: 0 0 8px rgba(0, 163, 255, 0);
+	}
+	100% {
+		filter: drop-shadow(0 0 8px rgba(0, 163, 255, 1));
+		text-shadow: 0 0 8px rgba(0, 163, 255, 1);
+	}
+}
+
+.header__button_nft {
+	margin-left: 10px;
+}
+.header__button_link {
+	margin-left: 10px;
+	margin-right: 1.5em;
+}
+.header__button_seed {
+	width: 120px;
+	height: 32px;
+	z-index: 1;
+}
+.header__button_buy {
+	width: max-content;
+	padding-inline: 15px;
+	height: 32px;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 1250px) {
+	.header__navbar {
+		display: none;
+	}
+}
+@media screen and (max-width: 660px) {
+	.header__button_seed {
+		width: 90px;
+	}
+}
+@media screen and (max-width: 540px) {
+	.header__button_link {
+		margin-left: 10px;
+		margin-right: 15px;
+	}
+	.header__button {
+		margin-left: 10px;
+	}
+}
+@media screen and (max-width: 430px) {
+	.header__button_seed {
+		width: 50px;
+	}
+	.header__button_buy {
+		padding-inline: 5px;
+	}
+}

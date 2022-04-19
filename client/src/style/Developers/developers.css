@@ -1,0 +1,41 @@
+.devs {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.devs_bg {
+	opacity: 1;
+	position: absolute;
+	top: 64px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	width: 120%;
+	height: 150%;
+	max-width: 1800px;
+	max-height: 1000px;
+
+	background: radial-gradient(
+		50% 50% at 50% 50%,
+		rgba(0, 163, 255, 0.4) 0%,
+		rgba(0, 26, 255, 0) 100%
+	);
+	background-repeat: no-repeat;
+
+	z-index: -1;
+}
+.devs_content {
+	width: 100%;
+	padding-inline: 120px;
+}
+
+@media screen and (max-width: 900px) {
+	.devs_content {
+		padding-inline: 50px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.devs_content {
+		padding-inline: 20px;
+	}
+}

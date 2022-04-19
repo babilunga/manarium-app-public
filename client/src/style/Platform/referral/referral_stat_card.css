@@ -1,0 +1,39 @@
+.ref_hero_stat_card {
+	display: block;
+}
+.ref_hero_stat_card_title {
+	margin-bottom: 5px;
+}
+.ref_hero_stat_card_info {
+	display: flex;
+	align-items: center;
+	padding: 8px;
+	gap: 5px;
+}
+.ref_hero_stat_card_info svg {
+}
+.ref_hero_stat_card_info span {
+}
+@media screen and (max-width: 1070px) {
+	.ref_hero_stat_card {
+		flex: 1 1 130px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.ref_hero_stat_card {
+		display: flex;
+		align-items: center;
+		flex: 1;
+		width: 100%;
+	}
+	.ref_hero_stat_card_info {
+		padding: 8px 20px;
+	}
+	.ref_hero_stat_card_title {
+		width: 50%;
+	}
+	.ref_hero_stat_card_info {
+		width: 50%;
+		justify-content: center;
+	}
+}

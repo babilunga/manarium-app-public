@@ -1,0 +1,118 @@
+.nft_hero {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding-inline: 120px;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nft_hero_back {
+	position: absolute;
+	width: 100%;
+	height: calc(100% + 90px);
+	top: 0px;
+	left: 0;
+
+	background-image: url('../../img/Nft/hero_background.png');
+	background-position: bottom center;
+	background-repeat: repeat-x;
+	background-size: cover;
+
+	z-index: -1;
+}
+.nft_hero_content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.nft_hero_content img {
+	z-index: 1;
+}
+.nft_hero_text {
+	max-width: 450px;
+	width: 100%;
+	text-transform: uppercase;
+	z-index: 1;
+	text-align: center;
+	padding: 5px 20px;
+	cursor: default;
+}
+.nft_hero_contract_container {
+	width: max-content;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	backdrop-filter: blur(20px);
+	border: 2px solid white;
+	border-radius: 100px;
+}
+.nft_hero_contract {
+	width: max-content;
+	margin: 0 auto;
+	padding: 5px 20px 7px;
+	cursor: pointer;
+	font-size: 14px;
+}
+.nft_hero_contract_copy_btn {
+	display: inline-block;
+	margin-top: 0;
+	padding: 0;
+	margin-left: 5px;
+	transform: translateY(25%);
+	opacity: 0.8;
+	transition: transform 100ms ease-in-out, opacity 100ms ease-in-out;
+}
+@media screen and (max-width: 1740px) {
+	.nft_hero_back {
+		background-position: bottom left -50px;
+	}
+	.nft_hero_content img {
+		transform: scale(1.3);
+	}
+	.nft_hero_contract_container {
+		margin-bottom: 50px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.nft_hero {
+		padding-inline: 50px;
+	}
+	.nft_hero_back {
+		background-position: bottom left -160px;
+	}
+	.nft_hero_contract p {
+		padding: 1px 20px 7px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.nft_hero_content img {
+		transform: scale(1.5) translate(0px, -20px);
+	}
+	.nft_hero_back {
+		background-position: bottom left -300px;
+	}
+}
+@media screen and (max-width: 495px) {
+	.nft_hero_contract p {
+		line-height: 1.2;
+	}
+}
+@media screen and (max-width: 425px) {
+	.nft_hero {
+		padding-inline: 20px;
+	}
+	.nft_hero_back {
+		background-position: bottom left -150px;
+	}
+	.nft_hero_contract {
+		padding: 4px 0px 7px;
+	}
+	.nft_hero_contract_container {
+		width: 100%;
+	}
+}

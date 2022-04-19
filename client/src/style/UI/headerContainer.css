@@ -1,0 +1,24 @@
+.header {
+	position: fixed;
+	width: 100%;
+	height: var(--header-height);
+	z-index: 3;
+	transition: background-color 500ms ease-in-out, top 1000ms ease-in-out,
+		backdrop-filter 500ms ease-in-out;
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	max-width: 1920px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+@supports (backdrop-filter: blur(5px)) {
+	.header_bg {
+		background-color: rgba(22, 22, 35, 0.7);
+	}
+}

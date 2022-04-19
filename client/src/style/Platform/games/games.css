@@ -1,0 +1,17 @@
+.platform_games {
+	position: relative;
+	padding-inline: 44px;
+	padding-bottom: 100px;
+	margin-inline: auto;
+	max-width: 1920px;
+}
+@media screen and (max-width: 810px) {
+	.platform_games {
+		padding-inline: 20px;
+	}
+}
+@media screen and (max-width: 425px) {
+	.platform_games {
+		padding-inline: 15px;
+	}
+}

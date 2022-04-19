@@ -1,0 +1,129 @@
+.play_games {
+  padding-top: var(--section-p-top);
+}
+.play_games_content {
+  display: flex;
+  flex-direction: row;
+}
+.play_games_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  flex: 1 1 30%;
+}
+.play_games_playnow {
+  width: 220px;
+  height: 40px;
+}
+.play_games_gallery {
+  /* width: 150%; */
+  position: relative;
+  display: flex;
+  flex: 1 1 70%;
+  overflow: hidden;
+}
+
+.play_games_gallery::before,
+.play_games_gallery::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 10%;
+  background-color: var(--bg-color);
+  /* background-color: red; */
+  z-index: 2;
+}
+.play_games_gallery::before {
+  box-shadow: 10px 0 50px 80px var(--bg-color);
+  left: -50px;
+}
+.play_games_gallery::after {
+  box-shadow: -10px 0 50px 80px var(--bg-color);
+  right: -50px;
+}
+
+.play_games_gallery_container {
+  display: flex;
+  width: 90%;
+  flex: 1 1;
+  overflow-x: scroll;
+  overflow-y: visible;
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  transition: all 100ms ease-in-out;
+  scroll-behavior: smooth;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.play_games_gallery_container::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .play_games_content {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .play_games_info {
+    align-items: center;
+  }
+  .play_games_info p {
+    text-align: center;
+  }
+  .play_games_info a {
+    width: 100%;
+  }
+  .play_games_playnow {
+    width: 60%;
+    height: 40px;
+    margin: 0 auto;
+  }
+  .play_games_gallery::before,
+  .play_games_gallery::after {
+    width: 5%;
+  }
+  .play_games_gallery::before {
+    left: -70px;
+    box-shadow: 25px 0 30px 50px var(--bg-color);
+  }
+  .play_games_gallery::after {
+    box-shadow: -25px 0 30px 50px var(--bg-color);
+    right: -70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .play_games_gallery::before,
+  .play_games_gallery::after {
+    width: 2%;
+  }
+  .play_games_gallery::before {
+    left: -10px;
+    box-shadow: 0px 0 20px 20px var(--bg-color);
+  }
+  .play_games_gallery::after {
+    box-shadow: 0px 0 20px 20px var(--bg-color);
+    right: -10px;
+  }
+  .play_games_playnow {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .play_games_gallery::before,
+  .play_games_gallery::after {
+    width: 1%;
+  }
+  .play_games_gallery::before {
+    left: -10px;
+    box-shadow: 0px 0 10px 10px var(--bg-color);
+  }
+  .play_games_gallery::after {
+    box-shadow: 0px 0 10px 10px var(--bg-color);
+    right: -10px;
+  }
+}

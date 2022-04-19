@@ -1,0 +1,92 @@
+.games__hero {
+	position: relative;
+	width: 100%;
+	margin-block: 30px;
+	border-radius: 32px;
+}
+.games__hero_stats {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	width: 100%;
+	margin-top: 25px;
+}
+.games__hero_stats_card {
+	position: relative;
+	display: flex;
+	flex: 1;
+	gap: 5px;
+	padding: 12px;
+	background: rgba(22, 22, 35, 0.45);
+	border-radius: 12px;
+	z-index: 1;
+}
+.games__hero_stats_card_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.info_block_stats_placeholder {
+	display: block;
+	height: 1rem;
+	width: 5rem;
+	border-radius: 100px;
+	animation: loading_text 0.5s linear infinite alternate;
+}
+@keyframes loading_text {
+	0% {
+		background: rgba(46, 69, 109, 0.3);
+	}
+	100% {
+		background: rgba(62, 92, 145, 0.3);
+	}
+}
+
+@media screen and (max-width: 1270px) {
+	.games__hero_stats_block {
+		flex-direction: column;
+		align-items: center;
+	}
+	.games__hero_stats {
+		flex-direction: column;
+		align-items: flex-start;
+		width: 100%;
+	}
+	.games__hero_stats_card {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 810px) {
+	.games__hero_col_placeholder {
+		display: none;
+	}
+}
+@media screen and (max-width: 800px) {
+	.popup_text {
+		top: 50%;
+		transform: translateX(-110%) translateY(-50%);
+	}
+	.games__hero_stats {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	.games__hero_stats_block {
+		margin-top: 20px;
+		align-items: center;
+		flex-direction: row;
+		width: 100%;
+	}
+	.info_block_stats {
+		width: 100%;
+		align-items: flex-start;
+	}
+	.info_block_stats h3 {
+		width: 100%;
+	}
+	.games__hero_bg_img {
+		opacity: 0.5;
+		bottom: -5%;
+		width: 40%;
+	}
+}

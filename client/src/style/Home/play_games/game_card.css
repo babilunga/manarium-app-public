@@ -1,0 +1,128 @@
+.game_card {
+	position: relative;
+	display: flex;
+
+	height: 550px;
+	max-width: 412px;
+	width: 100%;
+
+	border-radius: 32px;
+	align-items: flex-end;
+	margin-inline: 10px;
+	overflow: hidden;
+
+	transform: scale(0.97) translateZ(0);
+	transition: transform 100ms ease-in-out, transform 100ms ease-in-out;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+
+	z-index: 0;
+}
+@media (pointer: fine) {
+	.game_card:hover {
+		transform: scale(0.99);
+	}
+	.game_card:active {
+		transform: scale(0.97);
+	}
+}
+
+.game_card_info {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	padding: 15px;
+}
+.game_card_stats {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+
+	margin-top: 45px;
+}
+.game_card_stats_row {
+	margin-top: 12px;
+	display: flex;
+}
+.game_card_stats_row p {
+	flex: 1 1 0%;
+}
+.game_card_stats_row p span svg {
+	transform: translateY(15%);
+}
+.game_card_button {
+	width: 100%;
+	height: 40px;
+	background-color: #161623 !important;
+	border-radius: 100vw !important;
+	margin-top: 50px;
+}
+.game_card_button:hover {
+	transform: scale(1.02) !important;
+	box-shadow: none !important;
+}
+.game_card_button:active {
+	transform: scale(1) !important;
+	box-shadow: none !important;
+}
+.game_card_button:disabled {
+	transform: scale(1) !important;
+}
+.game_card_back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	transform: translateZ(0);
+	z-index: -1;
+}
+.game_card_back_img {
+	width: 100%;
+	object-fit: cover;
+}
+.game_card_back_fade {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	border-bottom-left-radius: 32px;
+	border-bottom-right-radius: 32px;
+}
+
+@media screen and (max-width: 765px) {
+	.game_card {
+		position: relative;
+		display: flex;
+		height: 420px;
+		min-width: 300px;
+		max-width: 300px;
+		width: 100%;
+	}
+	.game_card_info {
+		padding: 10px;
+	}
+	.game_card_info_desc {
+		font-size: 12px;
+	}
+	.game_card_button {
+		margin-top: 30px;
+	}
+	.game_card_stats {
+		margin-top: 20px;
+	}
+	.game_card_stats_row {
+		margin-top: 10px;
+		display: flex;
+	}
+	.game_card_stats_row p span {
+		font-size: 14px;
+	}
+}

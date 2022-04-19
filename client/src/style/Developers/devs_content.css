@@ -1,0 +1,83 @@
+.devs_content {
+	display: flex;
+	justify-content: center;
+	gap: 90px;
+
+	padding-top: 154px;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1920px;
+}
+.devs_col {
+	flex-direction: column;
+	justify-content: space-between;
+}
+.devs_desc_text {
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+.devs_help h3 {
+	margin-bottom: 20px;
+}
+.devs_help_cards {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.devs_help_card {
+	display: flex;
+	align-items: center;
+	padding-inline: 13px;
+	padding-block: 15px;
+	background: rgba(22, 22, 35, 0.45);
+	border-radius: 12px;
+}
+.devs_help_card_info {
+	width: 70%;
+}
+.devs_help_card_info h4 {
+	margin-bottom: 7px;
+}
+.devs_help_card img {
+	margin-right: 10px;
+}
+.devs_launch_cards {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	margin-top: 15px;
+}
+.devs_launch_card {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+.devs_launch_card > img {
+	width: 100%;
+	height: 100%;
+	max-width: 136px;
+	max-height: 136px;
+}
+.devs_link {
+	width: 100%;
+	height: 45px;
+}
+.devs_link_button {
+	width: 100%;
+	height: 45px;
+	background: radial-gradient(100% 345.45% at 0% 0%, #86d3ff 0%, #00a3ff 100%),
+		#171623;
+}
+
+@media screen and (max-width: 1050px) {
+	.devs_content {
+		flex-direction: column;
+	}
+	.devs_link {
+		margin-top: 30px;
+	}
+	.devs_help {
+		margin-top: 50px;
+	}
+}

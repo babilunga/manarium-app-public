@@ -1,0 +1,28 @@
+.referral {
+	position: relative;
+	padding-inline: 44px;
+}
+.referral_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.platform_claimed_modal_button {
+	margin: 0;
+	margin-top: auto;
+	margin-bottom: 0;
+	height: 45px;
+	width: 100%;
+}
+@media screen and (max-width: 810px) {
+	.referral {
+		padding-inline: 30px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.referral {
+		padding-inline: 15px;
+	}
+}

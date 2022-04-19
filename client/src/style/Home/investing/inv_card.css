@@ -1,0 +1,68 @@
+.inv_card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	max-width: 244px;
+	min-height: 273px;
+	width: 100%;
+
+	padding: 40px 30px;
+
+	background: #161623;
+	border: 2px solid #1d1b2b;
+	box-sizing: border-box;
+	box-shadow: 0 0 32px rgba(10, 10, 10, 0.5);
+	border-radius: 32px;
+
+	transition: all 500ms ease-in-out;
+}
+.inv_card_icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 70px;
+	height: 70px;
+
+	margin-top: 10px;
+
+	border: 1px solid #00a3ff;
+	box-shadow: 0px 0px 64px rgba(57, 136, 255, 0.16);
+	border-radius: 23px;
+}
+.inv_card_info {
+	margin-top: 25px;
+	text-align: center;
+}
+.inv_card_info p {
+	margin-top: 12px;
+}
+
+@media (pointer: fine) {
+	.inv_card:hover {
+		background: linear-gradient(
+			360deg,
+			rgba(58, 162, 254, 0.1) 0%,
+			rgba(100, 125, 253, 0.1) 0.01%,
+			rgba(0, 163, 255, 0) 72.27%
+		);
+		box-shadow: 0 0 32px rgba(58, 162, 254, 0.1);
+		border: 2px solid var(--accent-color);
+		transition: all 100ms ease-in-out;
+	}
+}
+
+@media (pointer: coarse) {
+	.inv_card:active {
+		background: linear-gradient(
+			360deg,
+			rgba(58, 162, 254, 0.1) 0%,
+			rgba(100, 125, 253, 0.1) 0.01%,
+			rgba(0, 163, 255, 0) 72.27%
+		);
+		box-shadow: 0 0 32px rgba(58, 162, 254, 0.1);
+		border: 2px solid var(--accent-color);
+		transition: all 0ms ease-in-out;
+	}
+}

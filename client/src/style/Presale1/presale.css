@@ -1,0 +1,28 @@
+.presale {
+	overflow: hidden;
+	max-width: 100vw;
+}
+
+@supports (aspect-ratio: 8/16) {
+	.presale_bg {
+		aspect-ratio: 12/8;
+	}
+}
+
+@media screen and (max-width: 810px) {
+	.presale_bg {
+		width: 100%;
+		top: -7%;
+	}
+}
+@media screen and (max-width: 470px) {
+	.presale_bg {
+		width: 100%;
+		top: -5%;
+		background: radial-gradient(
+			50% 50% at 50% 50%,
+			rgba(0, 163, 255, 0.3) 0%,
+			rgba(0, 26, 255, 0) 100%
+		);
+	}
+}
