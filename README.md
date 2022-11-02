@@ -23,7 +23,7 @@ I use a number of open source projects to work properly:
 | [Node.js] | backend |
 | [Express] | fast node.js network app framework, routing, background workers |
 
-Also those project and servises they provide:
+Also these projects and servises they provide:
 
 | Project | Service/Usecase |
 |---------|-----------------|
